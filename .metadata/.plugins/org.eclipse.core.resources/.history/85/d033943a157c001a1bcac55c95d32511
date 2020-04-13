@@ -1,0 +1,34 @@
+package com.santosh.registration.resource;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.env.Environment;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.santosh.registration.dto.input.UsersDto;
+import com.santosh.registration.mapper.UserMapper;
+import com.santosh.registration.service.UsersService;
+
+@RestController
+@RequestMapping("/users")
+public class UsersResource {
+
+	@Autowired
+	private UsersService userService;
+	@Autowired
+	private Environment env;
+
+	@GetMapping("/status")
+	public String status() {
+		return env.getProperty("server.port");
+	}
+
+	@PostMapping("/")
+	public UsersDto createUser(@RequestBody UsersDto user) {
+		return userService.createUser(user);
+	}
+
+}

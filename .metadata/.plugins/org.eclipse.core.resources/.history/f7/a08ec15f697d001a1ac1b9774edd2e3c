@@ -1,0 +1,30 @@
+package com.santosh.zuul.server.security;
+
+import java.io.IOException;
+
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.core.env.Environment;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
+
+public class AuthorizationFilter extends BasicAuthenticationFilter {
+
+	Environment env;
+
+	public AuthorizationFilter(AuthenticationManager authenticationManager, Environment env) {
+		super(authenticationManager);
+		this.env = env;
+	}
+	
+	@Override
+	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain chain)
+			throws IOException, ServletException {
+		// TODO Auto-generated method stub
+		super.doFilterInternal(request, response, chain);
+	}
+
+}

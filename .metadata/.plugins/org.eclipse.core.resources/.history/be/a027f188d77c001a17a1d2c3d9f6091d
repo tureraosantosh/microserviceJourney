@@ -1,0 +1,12 @@
+package com.santosh.registration.repo;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.santosh.registration.entity.Users;
+
+
+public interface UsersRepo extends JpaRepository<Users, Long> {
+
+	Users findUsersByEmail(String username);
+
+}

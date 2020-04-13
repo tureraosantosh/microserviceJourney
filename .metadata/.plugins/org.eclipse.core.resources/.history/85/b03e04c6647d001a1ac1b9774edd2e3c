@@ -1,0 +1,5 @@
+package com.santosh.zuul.server.security;
+
+public class WebSecurity {
+
+}

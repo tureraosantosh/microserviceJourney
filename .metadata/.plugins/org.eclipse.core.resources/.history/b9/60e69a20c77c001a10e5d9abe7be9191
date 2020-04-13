@@ -1,0 +1,6 @@
+package com.santosh.registration.model;
+
+public class LoginRequestModel {
+
+	
+}

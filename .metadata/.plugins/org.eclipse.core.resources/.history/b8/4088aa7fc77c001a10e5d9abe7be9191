@@ -1,0 +1,9 @@
+package com.santosh.registration.security;
+
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+public class AuthanticationFilter extends UsernamePasswordAuthenticationFilter{
+	
+	
+
+}
