@@ -1,8 +1,0 @@
-package com.santosh.registration.model;
-
-public class LoginRequestModel {
-
-	private String email;
-	private String password;
-	
-}

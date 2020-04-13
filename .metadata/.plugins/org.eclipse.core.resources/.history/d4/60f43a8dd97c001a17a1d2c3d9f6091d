@@ -1,5 +1,0 @@
-package com.santosh.registration.exception;
-
-public class ResourceNotFoundException {
-
-}

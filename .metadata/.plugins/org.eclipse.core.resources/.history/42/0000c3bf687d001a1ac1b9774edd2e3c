@@ -1,9 +1,0 @@
-package com.santosh.zuul.server.security;
-
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
-
-
-public class AuthorizationFilter extends BasicAuthenticationFilter  {
-
-}

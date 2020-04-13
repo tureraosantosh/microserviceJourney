@@ -1,9 +1,0 @@
-package com.santosh.registration.security;
-
-import org.springframework.context.annotation.Configuration;
-
-@Configuration
-@EnableWeb
-public class WebSecurity {
-
-}

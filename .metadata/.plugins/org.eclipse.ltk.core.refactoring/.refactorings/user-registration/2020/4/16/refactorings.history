@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename compilation unit &apos;com.santosh.registration.service.UsersService.java&apos; to &apos;UsersServiceImpl.java&apos;&#x0D;&#x0A;- Original project: &apos;user-registration&apos;&#x0D;&#x0A;- Original element: &apos;com.santosh.registration.service.UsersService.java&apos;&#x0D;&#x0A;- Renamed element: &apos;com.santosh.registration.service.UsersServiceImpl.java&apos;" description="Rename compilation unit &apos;UsersService.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java&lt;com.santosh.registration.service{UsersService.java" name="UsersServiceImpl.java" references="false" stamp="1586707256745" version="1.0"/>
-</session>
