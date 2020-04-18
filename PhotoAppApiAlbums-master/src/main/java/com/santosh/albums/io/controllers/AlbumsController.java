@@ -3,11 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.appsdeveloperblog.photoapp.api.albums.io.controllers;
+package com.santosh.albums.io.controllers;
 
-import com.appsdeveloperblog.photoapp.api.albums.data.AlbumEntity;
-import com.appsdeveloperblog.photoapp.api.albums.service.AlbumsService;
-import com.appsdeveloperblog.photoapp.api.albums.ui.model.AlbumResponseModel;
 import java.util.ArrayList;
 import java.util.List;
 import org.modelmapper.ModelMapper;
@@ -19,10 +16,15 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.santosh.albums.data.AlbumEntity;
+import com.santosh.albums.service.AlbumsService;
+import com.santosh.albums.ui.model.AlbumResponseModel;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 @RestController
-@RequestMapping("/users/{id}/albums")
+@RequestMapping("/albums/{id}")
 public class AlbumsController {
     
     @Autowired
