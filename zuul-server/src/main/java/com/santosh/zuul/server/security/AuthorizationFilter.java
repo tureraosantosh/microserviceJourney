@@ -1,4 +1,4 @@
-package com.santosh.zuul.server.security;
+/*package com.santosh.zuul.server.security;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -54,3 +54,4 @@ public class AuthorizationFilter extends BasicAuthenticationFilter {
 	}
 
 }
+*/
